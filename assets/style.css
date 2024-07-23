@@ -155,3 +155,20 @@ footer {
 footer p{
     text-align: center;
 }
+button {
+    background-color: #3E4E50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10PX;
+  }  
+  button:hover {
+    font-weight: bold;
+    background-color: #93b7bb;
+    color: black;
+    border: 0;
+  }
