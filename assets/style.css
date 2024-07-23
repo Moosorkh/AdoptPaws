@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -153,3 +152,6 @@ footer {
     margin-top: 20px;
 }
 
+footer p{
+    text-align: center;
+}
