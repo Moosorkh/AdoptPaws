@@ -1,9 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ 
+}
 
+:root {
+  --primary: #618985;
+  --secondary: #96bbbb;
+  --tertiary: #eae5d7;
+  --dark: #1c1d21;
+  --light: #eeeef7;
+}
+
+body {
+  background-color: var(--tertiary); 
+  font-family: 'Palatino', 'Lucida Sans', Arial, sans-serif;
+  color: var(--dark); 
+}
+
+header {
+  padding: 20px;
+  background-color: var(--primary); /* Using variable */
+  color: #ffffff;
+  text-align: center;
+  
+}
 .banner{
-    background-image:url("https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg");
-  height: 10%; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-image:url("https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg");
+height: 10%; 
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover;
+position: relative;
+}
+
+h1 {
+  font-size: 48px;
+  display: inline-block;
+}
+
+header nav{
+  padding-top: 15px;
+  margin-right: 20px;
+  text-align: center;
+  font-family: 'Palatino', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+header nav ul,
+header nav ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 25px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#hero {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg");
   background-size: cover;
- position: relative;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+main {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+}
+
+h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+.treats,
+.accessories,
+.pet-care {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 320px;
+  background-color: var(--secondary); 
+   color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.container img {
+  max-width: 100%;
+  height: 175px;
+  margin-bottom: 20px;
+}
+
+.container h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contact,
+.about{
+  margin-bottom: 20px;
+  padding: 30px;
+  height: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: var(--primary);
+  text-align: center;
+  color: #ffffff;
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+}
+
+footer {
+  padding: 30px;
+  clear: both;
+  background-color: var(--primary);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.footer h2 {
+  font-size: 20px;
 }
