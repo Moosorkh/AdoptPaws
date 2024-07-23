@@ -6,27 +6,32 @@
     margin: 0;
     text-align: center;
 }
+
 body {
     background-color: #EAE5D7;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
 }
+
 header {
     padding: 20px;
     background-color: #96BBBB;
     color: #FFFFFF;
 }
+
 h1 {
     display: inline-block;
     font-size: 48px;
     color: #3E4E50
 }
-nav{
+
+nav {
     padding-top: 15px;
     margin-right: 20px;
     text-align: center;
 }
-header nav ul{
+
+header nav ul {
     padding: 0;
 }
 
@@ -35,27 +40,32 @@ header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
 header nav ul li a:hover {
-    color: #3E4E50; 
+    color: #3E4E50;
 }
+
 h2, h3 {
-    color: #3E4E50; 
+    color: #3E4E50;
 }
+
 a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 p {
     font-size: 16px;
     text-align: justify;
     margin: 20px 0;
 }
-.banner{
+
+.banner {
     height: 400px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("./Doggy-banner.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     position: relative;
 }
@@ -83,14 +93,14 @@ p {
     height: auto;
 }
 
-.product-grid{
+.product-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.product-grid article{
+.product-grid article {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -99,11 +109,12 @@ p {
     flex: 1 1 calc(33% - 40px);
 }
 
-.product-grid img{
+.product-grid img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -152,9 +163,10 @@ footer {
     margin-top: 20px;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
+
 button {
     background-color: #3E4E50;
     border: none;
@@ -165,10 +177,15 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 10PX;
-  }  
-  button:hover {
+}
+
+button:hover {
     font-weight: bold;
     background-color: #93b7bb;
     color: black;
     border: 0;
-  }
+}
+
+#shopping-list {
+    margin: 20px;
+}
