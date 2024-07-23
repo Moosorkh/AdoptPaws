@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+body {
+    background-color: #EAE5D7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+header {
+    padding: 20px;
+    background-color: #96BBBB;
+    color: #FFFFFF;
+}
+h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: #3E4E50
+}
+nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    text-align: center;
+}
+header nav ul{
+    padding: 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+header nav ul li a:hover {
+    color: #3E4E50; 
+}
+h2, h3 {
+    color: #3E4E50; 
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 0;
+}
+.banner{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Doggy-banner.jpg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text {
+    color: white;
+    font-size: 48px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-section {
+    text-align: left;
+    padding: 20px;
+}
+
+#about-section img {
+    float: right;
+    margin: 10px;
+    max-width: 300px;
+    height: auto;
+}
+
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-grid article{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 calc(33% - 40px);
+}
+
+.product-grid img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #96BBBB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #82A1A1;
+}
+
+footer {
+    padding: 20px;
+    background-color: #96BBBB;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+footer p{
+    text-align: ;
+}
