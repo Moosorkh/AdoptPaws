@@ -1,151 +1,155 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
- 
-}
 
-:root {
-  --primary: #618985;
-  --secondary: #96bbbb;
-  --tertiary: #eae5d7;
-  --dark: #1c1d21;
-  --light: #eeeef7;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
-
 body {
-  background-color: var(--tertiary); 
-  font-family: 'Palatino', 'Lucida Sans', Arial, sans-serif;
-  color: var(--dark); 
+    background-color: #EAE5D7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+header {
+    padding: 20px;
+    background-color: #96BBBB;
+    color: #FFFFFF;
+}
+h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: #3E4E50
+}
+nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    text-align: center;
+}
+header nav ul{
+    padding: 0;
 }
 
-header {
-  padding: 20px;
-  background-color: var(--primary); /* Using variable */
-  color: #ffffff;
-  text-align: center;
-  
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+header nav ul li a:hover {
+    color: #3E4E50; 
+}
+h2, h3 {
+    color: #3E4E50; 
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 0;
 }
 .banner{
-  background-image:url("https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg");
-height: 10%; 
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover;
-position: relative;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./Doggy-banner.jpg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
 }
 
-h1 {
-  font-size: 48px;
-  display: inline-block;
+.banner-text {
+    color: white;
+    font-size: 48px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-header nav{
-  padding-top: 15px;
-  margin-right: 20px;
-  text-align: center;
-  font-family: 'Palatino', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+#about-section {
+    text-align: left;
+    padding: 20px;
 }
 
-header nav ul,
-header nav ul li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 25px;
+#about-section img {
+    float: right;
+    margin: 10px;
+    max-width: 300px;
+    height: auto;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
+.product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-#hero {
-  height: 400px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-
+.product-grid article{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 calc(33% - 40px);
 }
 
-main {
-  width: 100%; 
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
+.product-grid img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
 }
 
-h2{
-  font-size: 40px;
-  text-align: center;
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    align-self: flex-start;
 }
 
-.treats,
-.accessories,
-.pet-care {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 320px;
-  background-color: var(--secondary); 
-   color: #ffffff;
-  text-align: center;
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.container img {
-  max-width: 100%;
-  height: 175px;
-  margin-bottom: 20px;
+form input[type="submit"] {
+    background-color: #96BBBB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
 }
 
-.container h3 {
-  margin-bottom: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.container p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.contact,
-.about{
-  margin-bottom: 20px;
-  padding: 30px;
-  height: auto;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: var(--primary);
-  text-align: center;
-  color: #ffffff;
-  width: 100%; 
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
+form input[type="submit"]:hover {
+    background-color: #82A1A1;
 }
 
 footer {
-  padding: 30px;
-  clear: both;
-  background-color: var(--primary);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
+    padding: 20px;
+    background-color: #96BBBB;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.footer h2 {
-  font-size: 20px;
-}
