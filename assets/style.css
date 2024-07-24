@@ -45,7 +45,8 @@ header nav ul li a:hover {
     color: #3E4E50;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #3E4E50;
 }
 
@@ -188,4 +189,18 @@ button:hover {
 
 #shopping-list {
     margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 32px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .product-grid article {
+        flex: 1 1 100%;
+    }
 }
