@@ -27,6 +27,7 @@ productButton.forEach(button => {
 // added display added items fucntion
 function displayCartItems(item){
     const cartItemsList = document.getElementById('cart-items-list');
+    cartItemsList.innerHTML = '';
     const itemList = document.createElement('li');
     itemList.textContent = `${item.name} $${item.price}`;
     cartItemsList.appendChild(itemList);
@@ -37,6 +38,7 @@ function getItems() {
     let addedItems = JSON.parse(localStorage.getItem('cart')) || [];
     
     const cartItemsList = document.getElementById('cart-items-list');
+    cartItemsList.innerHTML = '';
     addedItems.forEach(item => {
         const itemList = document.createElement('li');
         itemList.textContent = `${item.name} $${item.price}`;
