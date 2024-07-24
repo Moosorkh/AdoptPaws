@@ -67,28 +67,51 @@ clearShoppingListButton.addEventListener('click', clearItems);
 
 
 
-// Get the modal
-var modal = document.getElementById("myModal");
+// Function to populate the shopping list in the modal
+function populateShoppingList() {
+    let items = JSON.parse(localStorage.getItem('cart')) || [];
+    const shoppingList = document.getElementById('shoppingListItems');
+    shoppingList.innerHTML = ''; // Clear previous items
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+    items.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} $${item.price}`;
+        shoppingList.appendChild(li);
+    });
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+// Event listeners for opening and closing the modal
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('myModal');
+    const btn = document.getElementById('myBtn');
+    const span = document.getElementsByClassName('close')[0];
+
+    // Open the modal
+    btn.onclick = function() {
+        modal.style.display = 'block';
+        populateShoppingList(); // Populate the shopping list when modal opens
+    }
+
+    // Close the modal
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // Close the modal if user clicks outside of it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+});
+
+// Function to clear shopping list
+function clearShoppingList() {
+    localStorage.removeItem('cart'); // Clear localStorage
+    const shoppingList = document.getElementById('shoppingListItems');
+    shoppingList.innerHTML = ''; // Clear the list displayed in the modal
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// Event listener for clearing shopping list
+const clearButton = document.getElementById('clear-shopping-list');
+clearButton.addEventListener('click', clearShoppingList);

@@ -74,27 +74,29 @@
             </div>
         </section>
         <!-- This is where the preselected items will appear -->
-        <section id="cart-items-section">
-            <h2>Pre-Selected Cart Items</h2>
-            <ul id="cart-items-list"></ul>
-        </section>
-        <!-- shopping list -->
-        <section>
-            <div id="shopping-list">
-                <!-- <button id="display-shopping-list">Shopping List</button> -->
-                <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Shopping List</button>
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p></p>
-                    </div>
-                </div>
-                <button id="clear-shopping-list">Clear Shopping List</button>
+<section id="cart-items-section">
+    <h2>Pre-Selected Cart Items</h2>
+    <ul id="cart-items-list"></ul>
+</section>
+
+<!-- Shopping List Modal -->
+<section>
+    <div id="shopping-list">
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Shopping List</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Shopping List</h2>
+                <ul id="shoppingListItems"></ul>
             </div>
-        </section>
+        </div>
+        <button id="clear-shopping-list">Clear Shopping List</button>
+    </div>
+</section>
+
         
 
         <!-- beginning of the contact section -->
@@ -116,7 +118,7 @@
     <footer>
         <p>&copy; 2024 Our Online Shop. All rights reserved. Designed with care and love.</p>
     </footer>
-    <script src="/assets/script.js"></script>
+    <script src="./assets/script.js"></script>
 
 </body>
 </html>
