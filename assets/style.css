@@ -191,6 +191,9 @@ button:hover {
     margin: 20px;
 }
 
+
+
+
 @media (max-width: 768px) {
     .banner-text {
         font-size: 32px;
@@ -227,6 +230,7 @@ button:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
   }
   
   /* The Close Button */
@@ -243,3 +247,46 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
+  /* Style for the shopping list receipt */
+#shoppingListItems {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    
+}
+
+#shoppingListItems p {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 18px;
+}
+
+#shoppingListItems p:last-child {
+    border-bottom: none;
+}
+
+#shoppingListItems .item-name {
+    flex: 2;
+}
+
+#shoppingListItems .item-quantity,
+#shoppingListItems .item-price {
+    flex: 1;
+    text-align: right;
+}
+
+#shoppingListItems .total {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
