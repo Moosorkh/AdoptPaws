@@ -49,6 +49,10 @@ header nav ul li a:hover {
     color: #3E4E50;
 }
 
+.bg-light{
+    background-color: #EAE5D7 !important;
+}
+
 h2{
     font-size: 2rem;
     font-weight: bold;
@@ -199,9 +203,6 @@ button:hover {
 #shopping-list {
     margin: 20px;
 }
-
-
-
 
 @media (max-width: 768px) {
     .banner-text {
