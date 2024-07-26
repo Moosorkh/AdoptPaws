@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #96BBBB;
     color: #FFFFFF;
 }
@@ -27,12 +27,16 @@ h1 {
 
 nav {
     padding-top: 15px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     text-align: center;
 }
 
 header nav ul {
     padding: 0;
+}
+
+li{
+    list-style-type: none;
 }
 
 header nav ul li {
@@ -43,6 +47,11 @@ header nav ul li {
 
 header nav ul li a:hover {
     color: #3E4E50;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 h2,
