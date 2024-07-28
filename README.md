@@ -1,4 +1,4 @@
-# Group 4 Project
+# AdoptPaws
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![HTML5](https://img.shields.io/badge/HTML5-Markup-orange.svg)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 [![CSS3](https://img.shields.io/badge/CSS3-Styles-blue.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
