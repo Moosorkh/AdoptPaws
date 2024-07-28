@@ -60,7 +60,11 @@ function populateShoppingList() {
 
     // Display total price
     const totalPricePtag = document.createElement('p');
-    totalPricePtag.textContent = `Total: $${totalPrice.toFixed(2)}`;
+    if(totalPrice === 0){
+        totalPricePtag.textContent = `Cart is empty, no item selected yet!`;
+    }else{
+        totalPricePtag.textContent = `Total: $${totalPrice.toFixed(2)}`;
+    }
     shoppingList.appendChild(totalPricePtag);
 }
 
@@ -112,3 +116,26 @@ function clearShoppingList() {
 // Event listener for clearing shopping list
 const clearButton = document.getElementById('clear-shopping-list');
 clearButton.addEventListener('click', clearShoppingList);
+
+
+
+//Logic for the Back-to-top button 
+document.addEventListener('DOMContentLoaded', function () {
+    var backToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 200) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
